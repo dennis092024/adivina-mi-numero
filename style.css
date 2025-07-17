@@ -1,0 +1,94 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa; ; /* Un azul claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container{
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 50%;
+    text-align: center;
+    border: 2px solid #00bcd4;  /* Un borde que combine */ 
+}
+
+h1{
+    color: #00838f;/* Tono de azul más oscuro */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p{
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.game-area{
+    display: flex;
+    flex-direction: column; /* Apila elementos verticalmente */
+    align-items: center;
+    gap: 15px; ; /* Espacio entre los elementos */ 
+    margin-bottom: 25px;
+}
+
+#guessInput{
+    padding: 12px 20px;
+    border: 2px solid #b2ebf2;
+    border-radius: 8px;
+    font-size: 1.5em;
+    width: 150px; /* Ancho fijo para el input */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#guessInput.focus{
+    border-color: #00bcd4; ;
+}
+
+button{
+    background-color: #00bcd4; /* Azul vibrante */ 
+    color:white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 80%; /* Ancho para los botones */
+    max-width: 200px;
+}
+
+button:hover{
+    transform: translateY(0); /* Efecto de clic */ 
+}
+
+#resetBtn{
+    background-color:  #ff9800; /* Naranja para reiniciar */ 
+}
+
+#resetBtn:hover{
+    background-color: #fb8c00; 
+}
+
+.message {
+    font-size: 1.2em;
+    font-weight: bold;
+    min-height: 25px; /* Para evitar que el diseño salte */ 
+    color: #4CAF50; /* Verde para mensajes de éxito */
+}
+
+.message.error{
+    color: #f44336; /* Rojo para mensajes de error */ 
+}
+
+.hidden{
+    display: none; /* Clase para ocultar el botón de reiniciar inicialmente */
+}
+
